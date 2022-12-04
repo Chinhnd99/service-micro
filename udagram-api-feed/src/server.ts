@@ -23,6 +23,7 @@ import { endHttpLogger, startHttpLogger } from './utils/httpLogger';
   const port = process.env.PORT || 8080;
 
   app.use(addRequestId({ setHeader: false }));
+  
 
   app.use(startHttpLogger);
   app.use(endHttpLogger);
